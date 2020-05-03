@@ -1,0 +1,29 @@
+package states.subscriber;
+
+有什么method{
+	
+	handleGroup {
+		public abstract class AbstractState implements IState
+		import events.AbstractEvent;
+			public abstract void handleEvent(AbstractEvent event, String channelName);
+
+		public class AState extends AbstractState
+			import events.AbstractEvent;
+				public void handleEvent(AbstractEvent event, String channelName)
+
+		public interface IState
+			import events.AbstractEvent;
+				public void handleEvent(AbstractEvent event, String channelName);
+	}
+	
+	
+	stateCreate {
+		public class StateFactory
+			public static IState createState(StateName stateName){}
+
+		
+		
+	}
+
+	
+}

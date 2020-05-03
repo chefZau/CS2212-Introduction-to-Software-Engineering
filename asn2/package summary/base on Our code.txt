@@ -1,0 +1,47 @@
+base on Our code
+
+package baseEntities{}
+
+package orchestration{
+	public static void main(String[] args){
+		List<AbstractChannel> channels = 🔥ChannelDiscovery.getInstance().listChannels();
+		subscriber.🔥subscribe(channelList.get(subscriberIndex%channelList.size()));
+		publisher.publish();
+	}
+}
+	
+
+package events{
+	public abstract class AbstractEvent{} 
+	public class EventFactory
+		import publishers.AbstractPublisher;
+}
+
+package publishers{
+	
+	public abstract class AbstractPublisher implements IEntity
+		import baseEntities.IEntity;
+		import events.AbstractEvent;
+		import strategies.publisher.IStrategy;
+
+	public class AlphaPublisher extends AbstractPublisher
+		import events.AbstractEvent;
+		import strategies.publisher.IStrategy;
+		import strategies.publisher.StrategyFactory;
+		
+		public void publish(AbstractEvent event) {
+			🔥publishingStrategy.doPublish(event, this.hashCode());
+		}
+
+		public void publish() {
+			🔥publishingStrategy.doPublish(this.hashCode());
+		}
+
+	public class PublisherFactory
+		import strategies.publisher.StrategyFactory;
+		import strategies.publisher.StrategyName;
+		public static AbstractPublisher createPublisher(PublisherType publisherType, StrategyName strategyName){
+			ip = new AlphaPublisher(🔥StrategyFactory.createStrategy(strategyName));
+		}
+		
+}

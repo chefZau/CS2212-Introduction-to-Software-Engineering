@@ -1,0 +1,36 @@
+package subscribers;
+
+有什么method{
+	subGroup1{
+		public abstract class AbstractSubscriber implements IEntity
+			import baseEntities.IEntity;
+			import events.AbstractEvent;
+			import states.subscriber.IState;
+			import states.subscriber.StateFactory;
+			import states.subscriber.StateName;
+				public void setState(StateName stateName)
+				public void alert(AbstractEvent event, String channelName)
+				public void subscribe(String channelName)
+				public void unsubscribe(String channelName)
+
+		class ConcreteSubscriberA extends AbstractSubscriber
+			import events.AbstractEvent;
+			import pubSubServer.SubscriptionManager;
+			import states.subscriber.StateFactory;
+			import states.subscriber.StateName;
+				public void setState(StateName stateName)
+				public void alert(AbstractEvent event, String channelName)
+				public void subscribe(String channelName)
+				public void unsubscribe(String channelName)
+	}
+	
+	subCreateGroup {
+		public class SubscriberFactory
+			import states.subscriber.StateName;
+			public static AbstractSubscriber createSubscriber(SubscriberType subscriberType, StateName stateName)
+
+		public enum SubscriberType
+	}
+	
+
+}

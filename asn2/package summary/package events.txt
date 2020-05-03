@@ -1,0 +1,19 @@
+
+package events
+
+
+有什么method{
+	
+	eventCreate {
+		public abstract class AbstractEvent{
+			public AbstractEvent(long eventID, int eventPublisher, EventMessage payload)
+		}
+		public class EventFactory ⚠️import publishers.AbstractPublisher {
+			public static AbstractEvent createEvent(EventType eventType, int eventPublisherId, EventMessage payload)
+		}
+		public class EventMessage{
+			public EventMessage(String header, String body)
+		}
+	}
+	
+}

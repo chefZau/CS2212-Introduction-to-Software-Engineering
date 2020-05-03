@@ -1,0 +1,10 @@
+SUB 3 main
+SUB 3 cars
+SUB 3 planes
+SUB 3 general
+BLOCK 3 main
+BLOCK 3 cars
+BLOCK 3 planes
+BLOCK 3 general
+PUB 2 0 'hhhhh eeeee aaaaa ddddd' 'bbb oooo  ddd  yyyy'
+PUB 2 0 'hhhhh eeeee aaaaa ddddd' 'bbb oooo  ddd  yyyy'

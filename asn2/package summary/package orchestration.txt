@@ -1,0 +1,13 @@
+package orchestration
+
+public method {
+	public static void main(String[] args)
+}
+
+什么地方用到了别的method {
+	public static void main(String[] args){
+		List<AbstractChannel> channels = 🔥ChannelDiscovery.getInstance().listChannels();
+		subscriber.🔥subscribe(channelList.get(subscriberIndex%channelList.size()));
+		publisher.publish();
+	}
+}

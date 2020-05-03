@@ -1,0 +1,41 @@
+package strategies.publisher;
+
+有什么method {
+
+	strDoPublish {
+		public abstract class AbstractStrategy implements IStrategy
+			import events.AbstractEvent;
+				public abstract void doPublish(int publisherId);
+				public abstract void doPublish(AbstractEvent event, int publisherId);
+
+		public class AStrategy extends AbstractStrategy
+			import events.AbstractEvent;
+			import events.EventFactory;
+			import events.EventMessage;
+			import events.EventType;
+			import pubSubServer.AbstractChannel;
+			import pubSubServer.ChannelDiscovery;
+			import pubSubServer.ChannelEventDispatcher;
+				public void doPublish(int publisherId){
+					🔥EventMessage message = new EventMessage(defaultHeader, defaultBody);
+					🔥AbstractEvent event = EventFactory.createEvent(defaultEventType, publisherId, message);
+					🔥ChannelEventDispatcher.getInstance().postEvent(event, listOfChannels);
+				}
+				public void doPublish(AbstractEvent event, int publisherId) {
+					🔥ChannelEventDispatcher.getInstance().postEvent(event, listOfChannels);
+				}
+	}
+	
+	strCreateGroup {
+		public interface IStrategy - that is a interface
+			import events.AbstractEvent;
+			import publishers.AbstractPublisher;
+
+		public class StrategyFactory
+			public static IStrategy createStrategy(StrategyName strategyName)
+
+		public enum StrategyName{}
+	}
+		
+	
+}

@@ -1,0 +1,38 @@
+package pubSubServer;
+
+有什么method {
+
+	public class ChannelAccessControl 
+		import subscribers.AbstractSubscriber;
+		no public class
+
+	public class ChannelCreator 
+		no public class
+
+	public class ChannelPoolManager
+		no public method
+
+	class Channel extends AbstractChannel
+		import events.AbstractEvent;
+		import subscribers.AbstractSubscriber;
+			public Channel(String channelTopic){}
+			public String getChannelTopic(){}
+
+	public class ChannelDiscovery
+		import subscribers.AbstractSubscriber;
+			public static ChannelDiscovery getInstance()
+			public List<AbstractChannel> listChannels()
+
+	public class ChannelEventDispatcher 
+		import events.AbstractEvent;
+		import publishers.AbstractPublisher;
+			public static ChannelEventDispatcher getInstance()
+			public void postEvent(AbstractEvent event, List<String> listOfChannels)
+
+
+	public class SubscriptionManager
+		import subscribers.AbstractSubscriber;
+			public static SubscriptionManager getInstance()
+			public void subscribe(String channelName, AbstractSubscriber subscriber)
+			public void unSubscribe(String channelName, AbstractSubscriber subscriber)
+}
